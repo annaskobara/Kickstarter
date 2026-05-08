@@ -1,0 +1,45 @@
+.btn {
+  margin-top: auto;
+  @include flex-center;
+  flex-direction: column;
+  width: 260px;
+  height: 48px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  background-color: colors(text-secondary);
+
+  @include onTablet {
+    display: none;
+  }
+
+  &:hover {
+    background-color: colors(text-primary);
+  }
+
+  &:disabled {
+    background-color: colors(border);
+  }
+
+  &--menu {
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+      width: 100px;
+      height: 48px;
+      padding: 0 20px;
+      margin-top: auto;
+    }
+  }
+}

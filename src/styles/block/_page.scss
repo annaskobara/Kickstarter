@@ -1,0 +1,39 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  color: colors(text-secondary);
+  font-size: 14px;
+  line-height: 21px;
+  overflow-x: hidden;
+
+  &__body {
+    margin: 0;
+    background-color: colors(background);
+    overflow-x: hidden;
+
+    @include onDesktop {
+      padding: 30px 123px;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    pointer-events: none;
+    opacity: 0;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+
+      @include onTablet {
+        padding: 45px 34px;
+        max-width: 768px;
+      }
+    }
+  }
+}
