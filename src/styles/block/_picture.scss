@@ -6,13 +6,13 @@
   background-position: center;
   min-height: 195px;
 
-  @include onTablet {
+  @include on-tablet {
     background-image: url(/src/images/meet-luma-crazybaby-tb.jpg);
     min-height: 430px;
     margin: 140px 34px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     background-image: url(/src/images/meet-luma-crazybaby-ds.jpg);
     min-height: 520px;
     margin: 170px 0;

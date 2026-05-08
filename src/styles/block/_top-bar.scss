@@ -1,17 +1,17 @@
 .top-bar {
   padding-block: 25px;
-  @include contenrPaddingInLine;
+  @include contenr-padding-in-line;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include onTablet {
+  @include on-tablet {
     padding: 40px 35px;
     gap: 30px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding: 0;
   }
 
@@ -19,7 +19,7 @@
     display: flex;
     gap: 24px;
 
-    @include onDesktop {
+    @include on-desktop {
       display: none;
     }
   }
@@ -28,7 +28,7 @@
     display: none;
     margin-left: auto;
 
-    @include onTablet {
+    @include on-tablet {
       display: flex;
       align-items: center;
       gap: 30px;

@@ -9,7 +9,7 @@
   scroll-snap-type: x mandatory;
   anchor-name: --carousel;
 
-  @include onTablet {
+  @include on-tablet {
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -17,7 +17,7 @@
     scroll-snap-type: none;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     display: flex;
     gap: 30px;
   }
@@ -29,18 +29,18 @@
   scroll-snap-align: center;
 
   &--left {
-    @include onTablet {
+    @include on-tablet {
       margin: 70px 0 0 34px;
     }
   }
 
   &--right {
-    @include onTablet {
+    @include on-tablet {
       margin: 70px 34px 0 0;
     }
   }
 
-  @include onDesktop {
+  @include on-desktop {
     max-width: 276px;
     margin: 0;
   }
@@ -51,7 +51,7 @@
     height: 40px;
     width: 50px;
 
-    @include onDesktop {
+    @include on-desktop {
       width: 70px;
       height: 50px;
       margin: 0 auto 30px;
@@ -69,7 +69,7 @@
 
     color: colors(text-secondary);
 
-    @include onDesktop {
+    @include on-desktop {
       padding-bottom: 24px;
 
       &--left {

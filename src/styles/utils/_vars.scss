@@ -11,7 +11,7 @@ $colors: (
   text-main: #7c7c7c,
   text-light: #4f4f4f,
   text-primary: #131313,
-  text-secondary: #333333,
+  text-secondary: #333,
 
   border: #d0d0d0,
   border-light: #bdbdbd,
@@ -19,5 +19,5 @@ $colors: (
 );
 
 @function colors($name) {
-  @return map-get($colors, $name);
+  @return map.get($colors, $name);
 }

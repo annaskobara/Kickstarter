@@ -1,16 +1,17 @@
 .review {
   @include flex-center;
+
   position: relative;
   margin: auto;
   flex-direction: column;
   text-align: center;
   width: 100%;
 
-  @include onTablet {
+  @include on-tablet {
     max-width: 710px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     max-width: 795px;
     margin-top: 102px;
   }
@@ -22,7 +23,7 @@
     font-weight: 700;
     line-height: 20px;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 24px;
       line-height: 36px;
       margin: 0 34px;
@@ -46,11 +47,11 @@
 
       opacity: 1;
 
-      @include onTablet {
+      @include on-tablet {
         left: 85%;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         top: 50%;
         height: 192px;
       }
@@ -59,14 +60,16 @@
 
   &__avatar {
     margin-top: 30px;
+
     @include flex-center;
+
     flex-direction: column;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 55px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       margin-top: 30px;
     }
   }
@@ -83,7 +86,7 @@
     font-weight: 700;
     line-height: 22px;
 
-    @include onDesktop {
+    @include on-desktop {
       margin-top: 20px;
     }
   }

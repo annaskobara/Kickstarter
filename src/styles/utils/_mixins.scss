@@ -23,25 +23,25 @@
   color: colors(text-secondary);
 }
 
-@mixin contenrPaddingInLine() {
+@mixin contenr-padding-in-line() {
   padding-inline: 30px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 35px;
   }
 
-  // @include onDesktop {
+  // @include on-desktop {
   //   padding-inline: 123px;
   // }
 }
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: 576px) {
     @content;
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: 1024px) {
     @content;
   }

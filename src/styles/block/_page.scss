@@ -1,5 +1,5 @@
 .page {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   color: colors(text-secondary);
   font-size: 14px;
   line-height: 21px;
@@ -10,17 +10,14 @@
     background-color: colors(background);
     overflow-x: hidden;
 
-    @include onDesktop {
+    @include on-desktop {
       padding: 30px 123px;
     }
   }
 
   &__menu {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     overflow: hidden;
 
     pointer-events: none;
@@ -30,7 +27,7 @@
       opacity: 1;
       pointer-events: all;
 
-      @include onTablet {
+      @include on-tablet {
         padding: 45px 34px;
         max-width: 768px;
       }

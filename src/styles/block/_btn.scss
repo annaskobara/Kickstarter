@@ -1,7 +1,9 @@
 .btn {
-  margin-top: auto;
-  @include flex-center;
   flex-direction: column;
+  margin-top: auto;
+
+  @include flex-center;
+
   width: 260px;
   height: 48px;
   cursor: pointer;
@@ -13,7 +15,7 @@
   color: white;
   background-color: colors(text-secondary);
 
-  @include onTablet {
+  @include on-tablet {
     display: none;
   }
 
@@ -26,7 +28,7 @@
   }
 
   &--menu {
-    @include onTablet {
+    @include on-tablet {
       display: none;
     }
   }
@@ -34,7 +36,7 @@
   &--tablet {
     display: none;
 
-    @include onTablet {
+    @include on-tablet {
       display: flex;
       width: 100px;
       height: 48px;

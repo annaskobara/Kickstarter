@@ -1,25 +1,25 @@
 .form {
   margin: 0 30px;
 
-  @include onTablet {
+  @include on-tablet {
     display: flex;
     gap: 21px;
     margin: 0;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     gap: 28px;
   }
 
   &__left {
-    @include onTablet {
+    @include on-tablet {
       flex: 1;
       margin: 140px 0 0 34px;
     }
   }
 
   &__right {
-    @include onTablet {
+    @include on-tablet {
       flex: 1;
       margin: 140px 34px 0 0;
     }
@@ -31,13 +31,13 @@
     line-height: 40px;
     text-transform: uppercase;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 36px;
       line-height: 46px;
       margin: 0;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       font-size: 56px;
       line-height: 70px;
     }
@@ -60,12 +60,12 @@
     &--big {
       height: 130px;
 
-      @include onTablet {
+      @include on-tablet {
         height: 200px;
         margin-bottom: 30px;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         height: 128px;
       }
     }
